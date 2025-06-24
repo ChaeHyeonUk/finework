@@ -1,0 +1,539 @@
+@charset "utf-8";
+
+.tab-content-1,.tab-content-2, .tab-content-3 {left: -100%;}
+
+@media screen and (min-width:1550px) {
+
+    .bn-apt-bg {
+        height: 100vh; margin-bottom: 95px;
+        background: url('../imgs/bg.jpg')  no-repeat center center;
+        background-size:cover;  background-attachment:fixed;
+    }
+    .bn-txt {
+        position: absolute; left: 0; top:45%; width: 100%;
+        color: #f6f6f6; text-align: center;
+    }
+    h2 { font-size: 80px; }
+    .bn-txt p {padding-top:15px; font-size: 26px; color: #f6f6f6;}
+
+	/*===== MBTI =====*/
+    .apt-mbti-wrap { display: flex; justify-content:space-between; margin-bottom:100px; }
+	
+    .apt-mbti-con {
+        position:relative;
+        width: 450px; height: 550px;  text-align:center;   
+        background: #eee; border-radius:20px;
+    }
+    h4 {padding:70px 0 5px; font-size:40px;}
+    h5 {font-size:28px; font-weight:500}
+    .apt-mbti-con p {width:220px; margin:60px auto}
+    .btn {position:absolute; left: 50%; bottom:90px; transform: translateX(-50%);}
+
+    .apt-mbti-bg {
+        width:1000px; height:550px;
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;   
+        background-size:cover; 
+		border-radius: 20px;		
+    }	
+	
+	/*===== METHODS =====*/
+    .apt-tab-wrap {
+        position: relative; height: 600px;margin: 50px 0 100px;
+        background: #e2e2e2; border-radius: 10px;
+    }
+    
+    input {display: none;}
+    label {
+        position: absolute; top: 20px;width: 230px;height: 60px;
+        color: #2b2e4a; text-align: center; line-height: 60px;
+        background: linear-gradient(to bottom, #eee, #c9d2ea); border-radius: 10px 10px 0px 0;
+        z-index: 3;
+    }
+    .tab-label-1 {left: 20px;}
+    .tab-label-2 {left: 260px;}
+    .tab-label-3 {left: 500px;}
+    input:checked + label { background: #f6f6f6; }
+    
+    .tab-content {
+        position: relative; top: 80px; width: 1460px; height:500px; margin:0px auto;
+        background: #f6f6f6; border-radius: 0 20px 20px 20px; overflow: hidden;
+    }
+    .tab-content > div {
+        display: flex; justify-content: space-between;
+        position: absolute; width: 100%; height: 100%; opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 { left: 0; opacity: 1; z-index: 2; }    
+    .tab-image {width: 880px;height: 440px; margin: 30px 0 30px 30px;border-radius: 20px;}
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-text {
+        position: relative; margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .tab-text p {width: 285px; margin: 0 auto; padding-top: 60px;}
+    .tab-text .btn {bottom:70px;}
+    
+	/*===== banner =====*/
+    .apt-ins-bg {
+		position:relative;
+        height:500px; margin-bottom: 95px;
+        color: #f6f6f6; text-align: center;
+		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;  
+        background-size:cover;  background-attachment:fixed;
+    }
+	.apt-ins-txt {position:absolute;  left:50%; width: 100%; top:50%; transform:translate(-50%, -50%);}
+	.apt-ins-txt h6 { font-size:60px; }
+    .apt-ins-bg p { font-size:30px; color: #f6f6f6; }
+	
+    /*===== test results =====*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+
+    /*=== sub title ===*/
+	.sub-title { display:flex; justify-content:center; margin: 0 auto 50px; }
+	h3 { font-size: 46px; letter-spacing:-1px; text-transform:uppercase; }
+    .sub-title-bar { width:3px; height:30px; margin:20px 20px 0; background:#3980b8; }
+	.sub-title p { padding-top:25px; font-size: 20px; }
+}
+
+@media screen and (min-width:1150px) and (max-width:1549px) {
+
+    .bn-apt-bg {
+        height: 100vh; background: url('../imgs/bg.jpg')  no-repeat center center;
+        background-size:cover;  background-attachment:fixed;
+    }
+    .bn-txt {
+        position: absolute; left: 0; top:45%; width: 100%;
+        color: #f6f6f6; text-align: center;
+    }
+    h2 { font-size: 60px; }
+    .bn-txt p  { padding-top:15px; font-size: 26px; color: #f6f6f6;}
+
+	/*===== MBTI =====*/
+    .apt-mbti-wrap { display: flex; justify-content:space-between; margin-bottom:80px; }
+	.apt-mbti-con {
+        position:relative;
+        width: 350px; height: 430px; text-align:center;   
+        background: #eee; border-radius:20px;
+    }
+    h4 {padding:45px 0 5px; font-size:36px;}
+    h5 {font-size:24px; font-weight:500}
+    .apt-mbti-con p {padding:50px 70px;}
+    .btn { position:absolute; left: 50%; bottom:60px; transform: translateX(-50%); }
+    .apt-mbti-bg {
+        width:700px; height:430px;
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;   
+        background-size:cover; 
+		border-radius: 10px;		
+    }
+	
+	/*===== METHODS =====*/
+    .apt-tab-wrap {
+        position: relative; height: 485px;margin: 4px auto;
+                background: #e2e2e2; border-radius: 10px;
+    }
+    input {display: none;}
+    label {
+        position: absolute; top: 15px;width: 180px;height:50px;
+        margin-top: 5px;
+        color: #2b2e4a; text-align: center; line-height: 50px;
+        background: linear-gradient(to bottom, #eee, #c9d2ea); border-radius: 10px 10px 0px 0;
+        z-index: 3;
+    }
+    .tab-label-1 {left: 20px;}
+    .tab-label-2 {left: 210px;}
+    .tab-label-3 {left: 400px;}
+    input:checked + label { background: #f6f6f6; }
+    .tab-content {
+        position: relative; top: 70px;  width: 1060px; height:395px; margin:0px auto;
+        background: #f6f6f6; border-radius: 0 20px 20px 20px; overflow: hidden;
+    }
+    .tab-content > div {
+        display: flex; justify-content: space-between;
+        position: absolute; width: 100%; height: 100%; opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 { left: 0; opacity: 1; z-index: 2; }    
+    .tab-image {width: 700px;height: 340px; margin: 30px 0 30px 30px; border-radius: 20px; }
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-text {
+        position: relative; margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .tab-text p {width: 200px;margin: 20px auto;}
+    
+    /*===== banner =====*/
+    .apt-ins-bg {
+		position:relative;
+        height:420px; color: #f6f6f6; text-align: center;
+		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;        
+        background-size:cover;  background-attachment:fixed;
+    }
+	.apt-ins-txt { position:absolute; width: 100%; left:50%; top:50%; transform:translate(-50%, -50%);}
+	.apt-ins-bg h6 {font-size: 50px;}
+    .apt-ins-bg p {font-size:20px; color: #f6f6f6;}
+	
+    /*===== test results =====*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+
+    /*=== sub title ===*/
+	.sub-title { display:flex; justify-content:center; margin: 0 auto 40px; }
+	h3 { font-size: 46px; letter-spacing:-1px; text-transform:uppercase; }
+	.sub-title-bar { width:3px; height:30px; margin:15px 20px 0; background:#3980b8; }
+	.sub-title p { padding-top:20px; font-size: 20px; }
+}
+
+@media screen and (min-width:750px) and (max-width:1149px) {
+
+    .bn-apt-bg {
+        height: 100vh; background: url('../imgs/bg.jpg')  no-repeat center center;
+        background-size:cover;  background-attachment:fixed;
+    }
+    .bn-txt {
+        position: absolute; left: 0; top:45%; width: 100%;
+        color: #f6f6f6; text-align: center;
+    }
+    h2 { font-size: 56px; }
+    .bn-txt p { padding-top:15px; font-size: 20px; color: #f6f6f6;}
+
+	/*===== MBTI =====*/
+    .apt-mbti-wrap { display: flex; justify-content:space-between; margin-bottom:80px; }
+	
+    .apt-mbti-con {
+        position:relative;
+        width: 280px; height: 330px; text-align:center;   
+        background: #eee; border-radius:20px;
+    }
+    h4 { padding-top : 30px;  font-size:30px; }
+    h5 { font-size:20px; font-weight:500 }
+    .apt-mbti-con p { padding:30px 30px 0; }
+    .btn { position:absolute; left: 50%; bottom:30px; transform: translateX(-50%); }
+
+    .apt-mbti-bg {
+        width:420px; height:330px;
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;   
+        background-size:cover; 
+		border-radius: 20px;		
+    }
+		
+	/*===== METHODS =====*/
+    .apt-tab-wrap {
+        position: relative; height: 395px;margin: 4px auto;
+        background: #e2e2e2; border-radius: 10px;
+    }
+    
+    input {display: none;}
+    label {
+        position: absolute; top:15px;width: 130px;height:45px;
+        color: #2b2e4a; text-align: center; line-height: 45px;
+        background: linear-gradient(to bottom, #eee, #c9d2ea); border-radius: 10px 10px 0px 0;
+        z-index: 3;
+    }
+    .tab-label-1 {left: 15px;}
+    .tab-label-2 {left: 154px;}
+    .tab-label-3 {left: 292px;}
+    input:checked + label { background: #f6f6f6; }
+    .tab-content {
+        position: relative; top: 60px;  width: 700px; height:320px; margin:0px auto;
+        background: #f6f6f6; border-radius: 0 20px 20px 20px; overflow: hidden;
+    }
+    .tab-content > div {
+        display: flex; justify-content: space-between;
+        position: absolute; width: 100%; height: 100%; opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 { left: 0; opacity: 1; z-index: 2; }    
+    .tab-image { width: 400px;height: 260px; margin: 30px; margin-right: 0; border-radius: 20px; }
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-text {
+        position: relative; margin: 0 auto; padding: 10px 0;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .tab-text p {width: 200px;margin: 20px auto;}
+    .tab-text .btn{
+            bottom: 40px;
+    }
+    /*===== banner =====*/
+    .apt-ins-bg {
+		position:relative;
+        height:300px; color: #f6f6f6; text-align: center;
+		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;        
+        background-size:cover;  background-attachment:fixed;
+    }
+	.apt-ins-txt {position:absolute;  left:50%; top:50%; transform:translate(-50%, -50%);}
+	.apt-ins-bg h6 {width: 700px; font-size:44px;}
+    .apt-ins-bg p {font-size:22px; color: #f6f6f6;}
+	
+    /*===== test results =====*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+
+    /*=== sub title ===*/
+	.sub-title {display:flex; justify-content:center; margin: 0 auto 40px;}
+	h3 {font-size: 40px; letter-spacing:-1px; text-transform:uppercase;}
+    .sub-title-bar {width:3px; height:30px; margin:15px 20px 0; background:#3980b8;}
+	.sub-title p {padding-top:20px; font-size: 20px;}
+}
+
+@media screen and (max-width:749px) {
+
+    h4 {font-size: 40px;}
+    h5 {font-size: 20px;}
+    .bn-apt-bg {
+        height: 100vh; background: url('../imgs/bg.jpg')  no-repeat center center;
+        background-size:cover;  background-attachment:fixed;
+    }
+    .dt, .tb {display: none;}
+     .bn-txt {
+        position: absolute; left: 0; top:40%;
+        width: 100%; 
+        text-align: center;
+        z-index: 1;
+    }
+    h2 { 
+        margin: 0 auto 15px; color: #f6f6f6; 
+        font-size: 42px; font-weight: 600; line-height: 44px;
+        text-transform: uppercase;
+    }
+    .bn-txt p {
+        width: 230px; margin: 0 auto;
+        color: #f6f6f6; font-size: 18px; font-weight: 500;
+    }
+    
+     /*===== MBTI =====*/
+    .apt-mbti-wrap { position: relative; width: 100%; height: 390px; margin-bottom: 60px;}
+    .apt-mbti-con {
+        position: absolute;  left: 50%; top: 30px ;  
+        width: 280px; height: 330px;
+        padding-top:25px;
+        text-align:center;
+        background: #eee;
+        border-radius:20px;
+        z-index: 4;
+        transform: translateX(-50%);
+        background: rgba(288,288,288,0.8);
+    }    
+    .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
+    h4 {font-size:30px;}
+    h5 {font-size:20px; font-weight:500}
+    .btn {
+        position: absolute; left: 50%;bottom: 30px;
+        transform: translate(-50%, 0);
+    }       
+    .apt-mbti-bg {
+        position: absolute; left: 0; top: 0; 
+        width: 100%; height: 100%;
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;  
+        background-size: cover; 
+        z-index: 3;
+    }
+
+    /*===== METHODS =====*/
+   
+    input {display: none;}
+    
+    .apt-tab-wrap {
+        position: relative;
+        width: 360px;    
+        height: 625px;   
+        margin: 30px auto 60px;
+        background: #e2e2e2;
+        border-radius: 10px;
+    }
+    
+
+    label {
+        position: absolute;
+        top: 15px;
+        width: 107px;    
+        height: 50px;    
+        color: #2b2e4a;
+        text-align: center;
+        line-height: 50px;
+        text-transform: uppercase;
+        background: linear-gradient(to bottom, #eee, #c9d2ea);
+        z-index: 6;
+        border-radius: 10px 10px 0px 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+   
+    .tab-label-1 {left: 15px;}
+    .tab-label-2 {left: 126px;}
+    .tab-label-3 {left: 238px;}
+    
+
+    .tab-content {
+        position: relative;
+        top: 65px;      
+        width: 330px;  
+        height: 545px;   
+        margin: 0 auto;
+        background: #f6f6f6;
+        border-radius: 0 0px 10px 10px;
+        overflow: hidden;
+    }
+    
+    .tab-content > div {
+        position: absolute;
+        width: 100%;height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }    
+    input:checked + label { background: #f6f6f6; }
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 {
+        left: 0;
+        opacity: 1;
+        z-index: 7;
+    }    
+    .tab-image {
+        width:300x;height: 200px;margin:20px 5px;
+        border-radius: 20px;
+    }
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+     }
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .tab-text {
+        width: 300px; margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+    }
+	h4 {padding: 5px;}
+    .tab-text p {width: 200px;margin: 20px auto;}
+	
+    /*===== banner =====*/
+    .apt-ins-bg {
+		position:relative;
+        height:300px; color: #f6f6f6; text-align: center;
+		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;        
+        background-size:cover;  background-attachment:fixed;
+    }
+	.apt-ins-txt {position:absolute;  left:50%; top:50%; transform:translate(-50%, -50%);}
+    .apt-ins-bg	h6 {width: 330px;  font-size:36px; line-height: 44px; margin: 0 auto; padding-bottom: 10px;}
+    .apt-ins-bg p {width: 330px; font-size:18px;color: #f6f6f6;}
+
+      /*===== test results =====*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    
+    /*=== sub title ===*/
+        .sub-title {width:300px; margin: 0 auto 30px;}
+        h3 {
+            padding-bottom: 5px;
+            font-size: 38px; color:#3980b8; letter-spacing:-1px;
+            text-align:center; line-height:40px;
+            text-transform:uppercase; 
+        }
+        .sub-title p { font-size: 18px; text-align:center;}
+ }
