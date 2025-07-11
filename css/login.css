@@ -3,7 +3,7 @@
 .bn {
     position: relative; left: 0; top: 0;
     height: 100vh;
-    background: url("/imgs/bg-sup.jpg") no-repeat center center;
+    background: url("../imgs/bg-sup.jpg") no-repeat center center;
     background-size: cover;
 }
 
