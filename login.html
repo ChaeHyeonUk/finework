@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occupational Aptitude Test</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+	<script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="textillate/animate.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="owlcarousel/carousel.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+	<script src="textillate/jquery.textillate.js"></script>
+    <script src="textillate/jquery.fittext.js"></script>
+    <script src="textillate/jquery.lettering.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                <a href="index.html" class="dt"><span class="txt-b">F</span>ine<span class="txt-b">W</span>ork</a>
+                <a href="index.html" class="mb"><span class="txt-b">F</span>W</a>
+            </h1>            
+            <a href="#" id="trigger" class="mb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>            
+            <ul id="main-menu">
+                <li>
+                    <a href="#">기업 소개</a>
+                    <ul class="sub-menu">
+                        <div class="sub-bar dt"></div>               
+                        <li><a href="company.html">개요 및 역사</a></li>
+                        <li><a href="#">투자 정보</a></li>
+                        <li><a href="#">재무 정보</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">취업 지원</a>
+                    <ul class="sub-menu">
+                        <div class="sub-bar dt"></div>
+                        <li><a href="support.html">취업 지원금</a></li>
+                        <li><a href="#">취업 후기</a></li>
+                        <li><a href="#">포트폴리오</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">능력 검사</a>
+                    <ul class="sub-menu">
+                        <div class="sub-bar dt"></div>
+                        <li><a href="aptitude.html">인적성 검사</a></li>
+                        <li><a href="#">검사 실시</a></li>
+                        <li><a href="#">결과 분석</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">일자리 찾기</a>
+                    <ul class="sub-menu dt">
+                        <div class="sub-bar dt"></div>
+                        <li><a href="#">일자리 검색</a></li>
+                        <li><a href="#">자격증 검색</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="top-menu">
+                <li>
+                    <a href="#">
+                        <span class="dt">로그인</span>
+                        <span class="mb"><i class="fa-solid fa-user" style="color: #74C0FC;"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><span class="dt">회원가입</span>
+                        <span class="mb"><i class="mb fa-solid fa-user-plus" style="color: #74C0FC;"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+	    <link rel="stylesheet" href="css/login.css">
+
+        <div class="bn"></div>
+
+        <div class="login-container">
+            <h3>Login</h3>
+            <form id="personal" action="/emp/member/login" method="post" autocomplete="off">
+                <input id="emp_id"  type="text" name="emp_id" class="input-text" placeholder=" 아이디 입력" autofocus required>
+                <input type="password" name="emp_pwd" class="input-text" placeholder=" 비밀번호 입력" required>
+                <div class="checkboxes">
+                    <label><input type="checkbox" name="login_save"> 로그인 유지</label>
+                    <label><input type="checkbox" name="id_save"> 아이디 저장</label>
+                </div>
+                    
+                <button type="submit">로그인</button>
+                <ul class="form-links">
+                    <li><a href="/emp/member/emp_register">회원가입</a></li>
+                    <li>
+                        <a href="/emp/member/emp_id_find">아이디찾기</a>
+                        <a href="/emp/member/emp_pwd_find">비밀번호찾기</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+</html>
