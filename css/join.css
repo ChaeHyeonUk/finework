@@ -1,0 +1,148 @@
+@charset 'utf-8';
+
+.bn {
+    position: relative; left: 0; top: 0;
+    height: 100vh;
+    background: url("../imgs/bg-sup.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+h3 {text-transform:uppercase;}
+
+@media screen and (min-width:1150px) {
+
+    .login-container {
+        position: absolute; left: 50%; top: 50%;
+        width: 500px; padding: 50px 0 70px;
+        text-align: center;
+        background: #fff;
+        border: 1px #333 solid;
+        transform: translate(-50%, -45%);
+    }
+
+    h3 {font-size: 50px; margin-bottom: 45px;}
+
+    .input-text {
+        width: 400px; height: 50px;
+        margin: 0 auto 25px;
+        border: 1px #333 solid;
+        background: #fff;
+    }
+
+    form ul li:first-child {        
+        display: flex; justify-content: space-between;
+        width: 400px; margin: 0 auto;
+    }
+
+    form ul li:first-child input {
+        width: 300px; margin: 0 0 25px 0;
+    }
+
+    form ul li:first-child button {
+        width: 70px; height: 50px; font-size: 14px;
+        border: 1px #333 solid;
+    }
+
+    form ul li:last-child input {
+        margin-bottom: 50px;
+    }
+
+
+    .submit {
+        width: 400px; height: 50px; margin: 0 auto;
+        font-size: 20px;
+        border: 1px #333 solid;
+    }
+
+}
+
+@media screen and (min-width:750px) and (max-width:1149px) {
+
+    .login-container {
+        position: absolute; left: 50%; top: 50%;
+        width: 400px; padding: 40px 0 50px;
+        text-align: center;
+        background: #fff;
+        border: 1px #333 solid;
+        transform: translate(-50%, -45%);
+    }
+
+    h3 {font-size: 40px; margin-bottom: 45px;}
+
+    .input-text {
+        width: 300px; height: 40px;
+        margin: 0 auto 20px;
+        border: 1px #333 solid;
+        background: #fff;
+    }
+
+    form ul li:first-child {        
+        display: flex; justify-content: space-between;
+        width: 300px; margin: 0 auto;
+    }
+
+    form ul li:first-child input {
+        width: 200px; margin: 0 0 20px 0;
+    }
+
+    form ul li:first-child button {
+        width: 70px; height: 40px; font-size: 14px;
+        border: 1px #333 solid;
+    }
+
+    form ul li:last-child input {
+        margin-bottom: 40px;
+    }
+
+    .submit {
+        width: 300px; height: 40px; margin: 0 auto;
+        font-size: 20px;
+        border: 1px #333 solid;
+    }
+}
+
+@media screen and (max-width:749px) {
+
+    .login-container {
+        position: absolute; left: 50%; top: 50%;
+        width: 350px; padding: 40px 0 50px;
+        text-align: center;
+        background: #fff;
+        border: 1px #333 solid;
+        transform: translate(-50%, -45%);
+    }
+
+    h3 {font-size: 36px; margin-bottom: 35px;}
+
+    .input-text {
+        width: 250px; height: 40px;
+        margin: 0 auto 15px;
+        border: 1px #333 solid;
+        background: #fff;
+    }
+
+    form ul li:first-child {        
+        display: flex; justify-content: space-between;
+        width: 250px; margin: 0 auto;
+    }
+
+    form ul li:first-child input {
+        width: 180px; margin: 0 0 15px 0;
+    }
+
+    form ul li:first-child button {
+        width: 60px; height: 40px; font-size: 14px;
+        border: 1px #333 solid;
+    }
+
+    form ul li:last-child input {
+        margin-bottom: 30px;
+    }
+
+    .submit {
+        width: 250px; height: 40px; margin: 0 auto;
+        font-size: 18px;
+        border: 1px #333 solid;
+    }
+
+}

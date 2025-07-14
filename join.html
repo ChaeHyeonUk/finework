@@ -84,29 +84,29 @@
             </ul>
         </nav>
     </header>
-
-	    <link rel="stylesheet" href="css/login.css">
+    
+        <link rel="stylesheet" href="css/join.css">
 
         <div class="bn"></div>
 
         <div class="login-container">
-            <h3>Login</h3>
-            <form id="personal" action="/emp/member/login" method="post" autocomplete="off">
-                <input id="emp_id"  type="text" name="emp_id" class="input-text" placeholder=" 아이디 입력" autofocus required>
-                <input type="password" name="emp_pwd" class="input-text" placeholder=" 비밀번호 입력" required>
-                <div class="checkboxes">
-                    <label><input type="checkbox" name="login_save"> 로그인 유지</label>
-                    <label><input type="checkbox" name="id_save"> 아이디 저장</label>
-                </div>
-                    
-                <button type="submit">로그인</button>
-                <ul class="form-links">
-                    <li><a href="join.html">회원가입</a></li>
+            <h3>join</h3>
+            <form id="personal" action="/emp/member/join" method="post" autocomplete="off">
+                <ul>
                     <li>
-                        <a href="#">아이디찾기</a>
-                        <a href="#">비밀번호찾기</a>
+                        <input id="emp_id"  type="text" name="emp_id" class="input-text" placeholder=" 아이디 입력" autofocus required>
+                        <button type="button"><a href="#">중복확인</a></button>
                     </li>
+                    <li>
+                        <input type="password" name="emp_pwd" class="input-text" placeholder=" 비밀번호 입력" required>
+                        <input type="password" class="input-text" placeholder=" 비밀번호 재입력" required>
+                    </li>
+                    <li><input type="text" name="emp_name" class="input-text" placeholder=" 이름 입력" autofocus required></li>
+                    <li><input type="text" name="emp_id" class="input-text" placeholder=" 닉네임 입력" autofocus required></li>
+                    <li><input type="tel" name="emp_tel" class="input-text" placeholder=" 핸드폰 번호 입력( '-' 제외)" autofocus required></li>
                 </ul>
+                    
+                <button type="submit" class="submit">회원가입</button>
             </form>
         </div>
 
@@ -150,4 +150,5 @@
             </div>
         </div>
     </footer>
+
 </html>
